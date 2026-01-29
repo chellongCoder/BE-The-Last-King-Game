@@ -118,3 +118,37 @@ https://supabase.com/dashboard/project/mlydsvrsezrjstlqdliv
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+
+## Plan 
+- install langchain
+- create api return data for scenario (tự sinh ra data object scenario, giải thích tại sao lại sinh ra data như vậy với từng value của từng field )
+
+prompt : You are a History expert about vietnam history. -> template
+Imagine you are current being in Tran dynasty
+You need create scenario like this object 
+  {
+    "id": "intro_1",
+    "text": "Nhà Trần mới thành lập, lòng dân chưa yên. Bạn sẽ làm gì để củng cố quyền lực?",
+    "imagePath": "assets/images/intro_1.png",
+    "leftChoice": {
+      "text": "Giảm thuế cho dân",
+      "effect": {
+        "people": 10,
+        "money": -10,
+        "army": 0,
+        "religion": 0
+      }
+    },
+    "rightChoice": {
+      "text": "Chiêu mộ binh lính",
+      "effect": {
+        "army": 10,
+        "money": -5,
+        "people": 0,
+        "religion": 0
+      }
+    }
+  },
+
+You need create api return Scenario data array , each scenario has left and right choice , text to describe scenario and imagePath to describe scenario. 
