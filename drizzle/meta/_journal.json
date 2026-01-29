@@ -15,6 +15,20 @@
       "when": 1769511186476,
       "tag": "0001_awesome_squadron_supreme",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1769576239173,
+      "tag": "0002_flowery_payback",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1769576517681,
+      "tag": "0003_military_the_captain",
+      "breakpoints": true
     }
   ]
 }
